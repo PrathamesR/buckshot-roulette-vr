@@ -1,5 +1,4 @@
-# Buckshot Roulette VR (personal mod)
-
+# Buckshot Roulette VR
 A fan-made, personal project that lets you play **Buckshot Roulette** in virtual reality. You sit (or stand) at the table in the
 headset, look around the club, and use your own hands to do what the game normally asks you to do with a mouse.
 
