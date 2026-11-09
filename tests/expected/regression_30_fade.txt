@@ -1,0 +1,4 @@
+Godot Engine v4.1.1.stable.official.bd6af8e0e - https://godotengine.org
+Y1 lying (1.6 s): transparency=0 (want 0) scale=(1, 1, 1) (want 1,1,1)
+Y2 1.0 s into the fade (clone life 1.6 s + 1.0): transparency=0.8 (want about 0.5, from the 2 s linear fade) scale=(1, 1, 1) (want 1,1,1)
+Y3 after the fade: freed=true (want true) fx left=0 (want 0)

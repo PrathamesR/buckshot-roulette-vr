@@ -1,0 +1,18 @@
+Godot Engine v4.1.1.stable.official.bd6af8e0e - https://godotengine.org
+S0 gun in the right hand: state=1 (want 1) sup=<null> (want null) muzzle ahead=0.66 m
+S1 squeeze 7 cm from the gun hand: no hold=true (want true)
+S2 squeeze 35 cm beside the barrel: no hold=true (want true)
+S2b squeeze at the pump (30 cm): pump hand=true no extra hold=true the hand sits on the pump=true (want true)
+S2c let go of the pump: hand free again=true (want true)
+S3 squeeze on the barrel (16 cm ahead): sup=true (want true) holding=true (want true) other hand is not the gun hand=true
+S4 hand kept still: the gun did not jump: angle change=0 deg (want ~0)
+S5 the holding hand's look sits on the gun: true (want true)
+S6 hand moved 15 cm to the left: gun direction=(-0.74, 0.1, -0.66) turned left (x<0)=true (want true) angle=48.6 deg
+S7 the hand still sits on the gun: true (want true)
+S8 let go: sup=<null> (want null) holding=false (want false) gun state=1 (want 1)
+S9 after letting go the gun is back in the gun hand's line: direction=(0, 0, -1) (want about 0,0,-1)
+S10 mirrored (left hand has the gun): sup=true (want true)
+S11 other hand squeezing already: gun taken=true no hold=true (want true)
+P1 game says no, nothing stolen in the hand: gun state=0 (want 0)
+P2 a stolen item in the other hand: gun state=1 (want 1)
+P3 stolen beer drunk (rack): gun state=1 (want 1)

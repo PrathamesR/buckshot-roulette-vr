@@ -1,0 +1,30 @@
+BUCKSHOT ROULETTE VR  (unofficial fan mod, not affiliated with the game's creator; contains no game files)
+
+INSTALL
+ 1. Close the game. Open the game folder: in Steam right-click Buckshot Roulette > Manage > Browse local files.
+    It is the folder that contains "Buckshot Roulette.exe".
+ 2. Extract EVERYTHING from this zip into that folder, so that "Buckshot Roulette VR.exe", "override.cfg" and the
+    "vr_mod" folder sit right next to "Buckshot Roulette.exe". Say yes if Windows asks to replace a file.
+ 3. Connect your headset to the PC first (Virtual Desktop streamer, Meta Quest Link or SteamVR - whichever is set as the
+    OpenXR runtime). Then double-click "Buckshot Roulette VR.exe".
+    Developed and tested only with a Meta Quest 3 over Virtual Desktop.
+
+PLAY WITHOUT VR
+ Start the game from Steam as usual, or run "Buckshot Roulette VR.exe --flat". The mod stays idle without VR.
+
+UNINSTALL
+ Delete "Buckshot Roulette VR.exe", "override.cfg" and the "vr_mod" folder from the game folder.
+ (Optional) delete %APPDATA%\Godot\app_userdata\Buckshot Roulette\vr_mod  - that is where your VR settings are saved.
+
+IF SOMETHING GOES WRONG
+ * "Windows protected your PC" (SmartScreen): the program is not code-signed. Click "More info" > "Run anyway".
+   Its source is in the repository, and the release is built there by GitHub Actions.
+ * The launcher says an override.cfg already exists: another mod uses that file. Rename it, or add these lines to it:
+       [autoload]
+       VRBoot="*res://vr_mod/vr_boot.gd"
+ * The game starts flat (not in VR): make sure the headset link was running BEFORE you started the game.
+ * Report problems with the log file: %APPDATA%\Godot\app_userdata\Buckshot Roulette\logs\godot.log
+ * A game update can break the mod. This version was tested with game version 2.2.0.6.
+
+This software was written almost entirely by an AI model (Claude) and has had very limited human review.
+It is provided as is, without warranty. See the project page for details, controls and the licence.

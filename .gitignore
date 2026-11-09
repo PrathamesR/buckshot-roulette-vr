@@ -1,0 +1,14 @@
+# personal settings written by the mod at run time
+vr_settings.cfg
+vr_tutorial.cfg
+# extracted from the game at run time (game assets, not ours)
+hands/
+# run-time debug pictures written by the mod
+walkmap.png
+window_probe_*.png
+# analysis files decoded from the game's own meshes, and old backups
+archive/
+__pycache__/
+# launcher binaries and release output
+dist/
+*.exe

@@ -1,0 +1,54 @@
+Godot Engine v4.1.1.stable.official.bd6af8e0e - https://godotengine.org
+C0 cuffs in the hand: true (want true)
+C1 after the game took them: handoff=false (want false) hand=true (want true) holding=false (want false)
+C2 _item_end with the flag: handoff=false (want false) holding=false (want false)
+C3 the gun can be taken: gun state=1 (want 1)
+B1 beer drunk, hand squeezes the shotgun: gun state=1 (want 1) rit=beer_rack (want beer_rack) held free=true (want true)
+B2 the held gun's pump box exists: true (want true)
+B3z before: rit_down={ "left": false, "right": true } rit_hand=<null> lh holding=false was_active=true
+B3y after 1: rit_down={ "left": true, "right": true } rit_hand=<RefCounted> holding=true
+B3 other hand took the pump: rit_hand=true (want true) DBG rit=beer_rack rit_t=0.88 lh.holding=true pump step=0 gun_state=1 pairs=7 dist=0
+B4 pump pulled with the gun in the other hand: pulled=true (note: depends on the mock gun's pump axis)
+B5 during the pause after racking: gun state=0 (want 0)
+B6 while the pump is being pulled on the table: gun state=0 (want 0)
+S1 saw: carried=true item axis forward=(-1, 0, 0) (want -1,0,0) grasp frac x=0.82 (want 0.82)
+I1 inverter, dial on the +x half: carried=true forward=(1, 0, 0) (want 1,0,0) grasp frac x=0.12 (want 0.12: the end away from the dial)
+I2 dial on the -x half: forward=(-1, 0, 0) (want -1,0,0) grasp frac x=0.88 (want 0.88)
+I2z before squeeze: lh.holding=false item_hand=right inv_hand=<null> gun_state=0 dist=0
+I2y frame 0 lh.holding=true inv_hand=<RefCounted> rit_hand2=true angle=0
+I2y frame 1 lh.holding=true inv_hand=<RefCounted> rit_hand2=true angle=0
+I2y frame 2 lh.holding=true inv_hand=<RefCounted> rit_hand2=true angle=0
+I3a item hand=right
+I3 dial taken: true (want true) DBG inv_hand=<RefCounted> rit_hand2=true angle=0 item_t=1.096 down=true sq=true zone=rit dial=true carried=true lh.holding=true was_active=true dist=0
+I4 hand moved 1.5 away: the hand's visual sits on the dial point: off by 0 (want 0)
+K00 DBG cig-to-mouth dist after the move: 0 m (limit 0.12)
+K0 DBG state=0 cig=false carried=false rit_t 0 name=cigarettes hint 
+K1 open pack held so that the cigarette is at the mouth: smoked=true (want true) burning=true
+P1 god form just came up: nothing yet, kind='' (want empty) seen timer started=true (want true)
+P2 after a second: kind=god (want god) original hidden=1 (want 1) copy=true slowed=0.02 (want 0.02)
+P3 floating in front: distance to head=3.19 m (want ~0.43) front faces you=1 (want ~1) longest side=0.15 .. 0.23 m
+P4 taken: hand=true (want true) holding=true (want true)
+P5 in the fist: paper centre 0.095 m from the hand (want about 0.04+half a sheet), hand y=1.4
+P5b god letter rigid in the hand: after turning the hand 90/35 deg the letter turned with it: angle diff=0 deg (want ~0) centre moved in the hand frame=0 m (want ~0)
+P6 hand opened: kind='' (want empty) time back to normal=1 (want 1) hand free=true fx entries=2
+P7 nobody takes it: ended=false (want true) time=0.02 (want 1)
+W0 fingertip on the waiver works (the original trigger): true (want true)
+W1 squeezed next to the waiver: no paper mode now (the game's own trigger): kind='god' (want empty) original visible=0 (want 0)
+Q1 picked the phone: carried=true dealer pose key='dealer_burner phone' (want dealer_burner phone) pose='dealer_burner phone' palm at the grip=0 m (want 0) mirrored (right hand is the base: no)=true (want true) shrink k=0.8
+Q2 flicked: state=1 (want 1) sounds started=1 (want 1: only the click) hint='PUT IT TO YOUR EAR' visible=true
+Q3 0.55 s on: hint shown=true (want true) text='PUT IT TO YOUR EAR'
+Q6 at the ear: state=2 (want 2) tutorial phone_ear done=true (want true)
+Q7 1.6 s into it: message=0 (want 0 yet) halves=1 (want 0)
+Q8 message came: sent=1 (want 1) halves=1 (want >=2) used=1 (want 1) carry ended=true (want true) hand free=true fx entries=2
+Q8b fx_root children=["VRBootPutDown:Label3D", "VRBootHint:Label3D", "VRBootRing:MeshInstance3D", "@MeshInstance3D@13:MeshInstance3D", "@MeshInstance3D@18:MeshInstance3D", "VRBootShotgun:Node3D:q", "@Node3D@81:Node3D:q", "@Node3D@95:Node3D:q", "VRBootProp:Node3D:q", "VRBootCigarette:Node3D", "@Node3D@115:Node3D:q", "@Node3D@117:Node3D", "@AudioStreamPlayer@127:AudioStreamPlayer", "@AudioStreamPlayer@128:AudioStreamPlayer", "@Node3D@129:Node3D", "@Node3D@133:Node3D", "VRBootShards:CPUParticles3D", "@AudioStreamPlayer@134:AudioStreamPlayer"] fx_list size=2
+Q9 later: message count=1 (want 1) game phone anim not stuck: phone_state=0
+Q10 left hand: pose='dealer_burner phone' mirrored det=-1 (want -1) visual det>0=true (want true) palm at grip=0 (want 0) grasp at grip=0 (want 0)
+N1 waiver on the table, machine not up: table y captured=1 (want 1.0)
+N2 while the pick-up animation runs: nothing moves, total=0 (want 0) pos y=3 (want 3)
+N3 lowered: bottom=1.462 (want 1.462) total=-0.079 m down
+T1 first time: shown=true (want true) text='FIRST TIME'
+T2 same session, again: shown=false (want false)
+T3 after a restart (file read back): shown=false (want false) file keys=true
+T4 two-line small tutorial word: shown=true (want true) lines=2 (want 2) scale k=0.68 (want 0.68)
+T5 normal hint back to full size: k=1 (want 1.0)
+T6 text self-check line:  text[font_w=-1 labels=1/2 hint=true] ts=0.02 tree_paused=false

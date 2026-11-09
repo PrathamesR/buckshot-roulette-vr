@@ -1,0 +1,9 @@
+Godot Engine v4.1.1.stable.official.bd6af8e0e - https://godotengine.org
+K0 smoke built: true amount=22 texture on the puff=true (want true) keeps scale=true (want true)
+K1 puff texture: 64x64 middle alpha=1 (want ~1) corner alpha=0 (want 0) edge-mid alpha=0 (want 0)
+B1 plane found and quiet: active=false (want false) hp seen=4 (want 4)
+B2a the very frame it starts it must stay on: true (want true)
+B2 you lost a life: splash=true (want true) shader visible=true (want true)
+B3 5 s later: gone=true (want true)
+B4 health went up (new round): no splash=true (want true)
+B5 the game's own blood (plane transparency drops): splash=true (want true)

@@ -1,0 +1,8 @@
+; Minimal project the offline tests run in (headless, no game files needed).
+config_version=5
+
+[application]
+config/name="vr_mod_tests"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"

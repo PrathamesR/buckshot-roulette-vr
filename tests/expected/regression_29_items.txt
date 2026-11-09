@@ -1,0 +1,38 @@
+Godot Engine v4.1.1.stable.official.bd6af8e0e - https://godotengine.org
+W1 warm-up: a tiny copy was drawn=true (want true) scale/ws=0.0006 done=true (want true) copies left=0 (want 0) gun pairs=0 (want 0) gun state=0 (want 0)
+G1 hand off the axis (0.25 m, old limit 0.085 m) inside the frame: box has it=true eff dist=0 (want 0)
+G2 squeezed: gun state=1 (want 1) hand=true
+G3 squeezed well outside the frame (0 m): gun state=0 (want 0)
+G4 on the axis still works: gun state=1 (want 1)
+G5 busy hand: gun state=0 (want 0, and a 'squeeze ... ignored' line above)
+H1 pack: carried=true item axis pointing forward=(1, 0, 0) (want 1,0,0) along the fist=(0, 0, -1) (want 0,0,-1) grasp frac z=0.6 (want 0.6)
+Q1 picked the phone: true state=0 (want 0) forward=(0, 0, 1) (want -1,0,0) fist axis=(-1, 0, 0) (want 0,0,-1) message=0
+Q2 flicked: state=1 (want 1) screen copies=2 (want 2) plain visible=true (want true) animated hidden=true (want true) own material=true (want true)
+Q3 0.55 s on: lid angle=2.6 (want about 2.6) hint='PUT IT TO YOUR EAR' shown=true (want PUT IT TO YOUR EAR / true)
+Q4 3 s with the phone away from the ear: state=1 (want 1) message=0 (want 0)
+Q5 phone at the ear 0.16 s: state=1 (want 1 still)
+Q6 phone at the ear 0.6 s: state=2 (want 2) plain hidden=true animated shown=true scale=0.67 (want about 0.19) message=0 (want 0)
+Q7 1.6 s into it: message=0 (want 0 yet) scale grows=true (want true) 5.5
+Q8 2.6 s into it: message=1 (want 1)
+Q9 the end: used up=1 (want 1) carry ended=true (want true) message count=1 (want 1) copies freed=true (want true) hand free=true
+Q10 let go before the ear: back on the table=true (want true) used=1 (want 1) message=1 (want 1) lid shut again=0 (want 0) copies freed=true (want true)
+Q11 left ear + let go while it plays: state was 2, message arrived=1 (want 1) used=2 (want 2)
+R0a jab with the cap still on does nothing: carried=true (want true) cap state=0 (want 0) used=0 (want 0)
+R0b cap taken by the other hand: state=1 (want 1) hand busy=true (want true)
+R0b2 let go too early: cap back on=true (want true) cap visible=true (want true) hand free=true (want true)
+R0c cap pulled off: state=2 (want 2) cap hidden=true (want true) hand free=true (want true) fall fx=3
+R1 forearm framed while the syringe is carried: true (want true)
+R2 jab: used up=1 (want 1) carry ended=true (want true) stuck copy=true (want true) item toss in fx=3
+R3 the syringe moves with the forearm: moved by (1, 0.5, 0) (want 1,0.5,0)
+R4 after the pulse time it lets go: stuck=<null> (want <null>) fx=1
+T1 pulse: effect=1 (want 1) moved=(0, 0, -14.3) want (0, 0, -14.3) on=true (want true)
+T2 game timing: steal set up=1 (want 1)
+T3 stealing: on=true (want true) still at the table=true (want true) dealer items stay=true (want true)
+T4 stays: true (want true)
+T5 nearest takeable item is the dealer's: true (want true)
+T6 squeezed: carrying=true (want beer) stolen=true (want true) the game was NOT told to use it=true (want true) back in the seat=true (want true) counter calls=[false] (want [false]) walk_off=(0, 0, 0)
+T7 put back: carrying=true (want true) counter calls=[false, true] (want [false, true]) moves to the table again=false (want true)
+T8 again at the table: true (want true)
+T9 drunk: rit=beer_rack (want beer_rack) the dealer's slot freed=true (want true) steal reverted=1 (want 1) stealing over=true (want true) fs off=true (want true) home camera=["home"] (want [home]) hand pos=true (want true) player grid untouched=0 (want 0) amounts: dealer 1 (want 1) player 2 (want 2) turns=["burner phone", "adrenaline", "beer"]
+T10 no stealing any more: on=false (want false) tp=false (want false) re=false (want false)
+T11 timeout of the game's clock: back in the seat=true (want true)

@@ -1,0 +1,10 @@
+Godot Engine v4.1.1.stable.official.bd6af8e0e - https://godotengine.org
+H3 hand visual proper=true scale along x=0.0106 (want 0.0106) INV_HOLD_K=0.62 item scale x=0.62 (the item itself is shown 0.62 x its table size 0.62)
+C1 model A (filter at the +y end 0.52): axis=(0.52, -1) (want 0.52,-1)
+C2 model B (filter at the low end 0.5): axis=(0.5, 1) (want 0.5,1)
+C3 the filter end sits at the fist: dist=0.017 m (want < 0.03) returned point matches=true
+C4 the burning end sticks out of the front of the fist: ahead of the fist by 0.386 m (want > 0.05) and above the filter (not hanging down)=true
+C5 proper basis (det>0)=true  long axis angle to the forward=24.2 deg (want < 40)
+B1 both buttons allowed: frame vertices=72 (want > 0) colour green=true
+B2 buttons not allowed: frame vertices=0 (want less than before: true)
+S1 sign built: check ends at y=652 close starts at y=694 no overlap=true

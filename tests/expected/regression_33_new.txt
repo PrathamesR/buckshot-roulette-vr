@@ -1,0 +1,41 @@
+Godot Engine v4.1.1.stable.official.bd6af8e0e - https://godotengine.org
+C0 cuffs in the hand: true (want true)
+C1 after the game took them: handoff=false (want false) hand=true (want true) holding=false (want false)
+C2 _item_end with the flag: handoff=false (want false) holding=false (want false)
+C3 the gun can be taken: gun state=1 (want 1)
+B1 beer drunk, hand squeezes the shotgun: gun state=1 (want 1) rit=beer_rack (want beer_rack) held free=true (want true)
+B2 the held gun's pump box exists: true (want true)
+B3z before: rit_down={ "left": false, "right": true } rit_hand=<null> lh holding=false was_active=true
+B3y after 1: rit_down={ "left": true, "right": true } rit_hand=<RefCounted> holding=true
+B3 other hand took the pump: rit_hand=true (want true) DBG rit=beer_rack rit_t=0.88 lh.holding=true pump step=0 gun_state=1 pairs=7 dist=0
+B4 pump pulled with the gun in the other hand: pulled=true (note: depends on the mock gun's pump axis)
+B5 during the pause after racking: gun state=0 (want 0)
+B6 while the pump is being pulled on the table: gun state=0 (want 0)
+S1 saw: carried=true item axis forward=(-1, 0, 0) (want -1,0,0) grasp frac x=0.82 (want 0.82)
+I1 inverter, dial on the +x half: carried=true forward=(1, 0, 0) (want 1,0,0) grasp frac x=0.12 (want 0.12: the end away from the dial)
+I2 dial on the -x half: forward=(-1, 0, 0) (want -1,0,0) grasp frac x=0.88 (want 0.88)
+I2z before squeeze: lh.holding=false item_hand=right inv_hand=<null> gun_state=0 dist=0
+I2y frame 0 lh.holding=true inv_hand=<RefCounted> rit_hand2=true angle=0
+I2y frame 1 lh.holding=true inv_hand=<RefCounted> rit_hand2=true angle=0
+I2y frame 2 lh.holding=true inv_hand=<RefCounted> rit_hand2=true angle=0
+I3a item hand=right
+I3 dial taken: true (want true) DBG inv_hand=<RefCounted> rit_hand2=true angle=0 item_t=1.096 down=true sq=true zone=rit dial=true carried=true lh.holding=true was_active=true dist=0
+I4 hand moved 1.5 away: the hand's visual sits on the dial point: off by 0 (want 0)
+K00 DBG cig-to-mouth dist after the move: 0 m (limit 0.12)
+K0 DBG state=0 cig=false carried=false rit_t 0 name=cigarettes hint 
+K1 open pack held so that the cigarette is at the mouth: smoked=true (want true) burning=true
+P1 god form just came up: nothing yet, kind='' (want empty) seen timer started=true (want true)
+P2 after a second: kind=god (want god) original hidden=1 (want 1) copy=true slowed=0.02 (want 0.02)
+P3 floating in front: distance to head=3.19 m (want ~0.43) front faces you=1 (want ~1) longest side=0.15 .. 0.23 m
+P4 taken: hand=true (want true) holding=true (want true)
+P5 in the fist: paper centre 0.095 m from the hand (want about 0.04+half a sheet), hand y=1.4
+P6 hand opened: kind='' (want empty) time back to normal=1 (want 1) hand free=true fx entries=2
+P7 nobody takes it: ended=false (want true) time=0.02 (want 1)
+W0 fingertip on the waiver is off: false (want true)
+W1 squeezed next to the waiver: kind=god (want waiver) framed first=false hand=true (want true) game not called yet=true (want true) original hidden=0 (want 1)
+W2 held low: fired=false (want false)
+W3 brought up to the eyes: fired=false (want true) game's pick-up called=false (want true)
+W4 hand opened after reading: ended=true (want true) falls=true original still hidden (until the game is done)=0 (want 1)
+W5 taken and let go at once: kind was  now '' (want empty) original back=0 (want 0) game called again=0 (want 1 in total)
+W6 the name went in: ended=true (want true)
+W7 nobody picked it up for 40 s: fingertip works again=true (want true)

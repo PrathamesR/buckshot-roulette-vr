@@ -1,0 +1,99 @@
+Godot Engine v4.1.1.stable.official.bd6af8e0e - https://godotengine.org
+A0 gun axis dist from its centre: 0 (want 0)  from 3 units off: 3 (want 3)
+A1 hand on the beer: carrying=true (want beer)  gun state=0 (want 0)
+A2 let go -> back: carrying=false (want false)
+A3 hover on the gun: hint 'false/0'  framed=true
+A4 squeeze on the gun: gun_state=1 (want 1) game told=false (want false) InteractWith=[] (want empty) real gun hidden=true
+A4b cone: muzzle flash copy visible=false (want false); see-through spark copy keeps the game's material=true (want true); body lit by our shader=true (want true)
+A5 squeeze with an item nearer than the gun: item taken=true (want true) gun state=0 (want 0)
+B1 beer's grasp point at the fist hole: off by 0 cm (want 0)
+B2 can's top along the fist axis: dot=1 (want 1)  holding=true pose open
+C1 can top at mouth: dist 0.2 m  drink=0.53 hint 'false/0'
+C2 drunk: rit=beer_rack (want beer_rack)  consumed: removed=1 (want 1) amount_player=2 (want 2) turnlist=["beer"] perm log tail=["ind=false", "perm=false", "desc"] beer stat=330 (want 330) final=false (want false)  hand free=true fx toss=1
+C3 pump framed/hint: 'false/0'
+C4 pump grabbed: hand=true (want true)
+C5 pulled: pull=1.2 pulled flag=true pump y=1.88 (rest 3.07999992370605)
+C6 pushed forward: rit=beer_wait (want beer_wait)  seq=["blank", "live"] (want [blank, live])  eject count=1 fx=2 (toss + shell)  pump y=3.08 (want 3.07999992370605)
+C7 after: rit='' enabled=1 (want 1)
+C8 shell landed / faded: fx left=0
+D1 took magnifier: true
+D2 whole glass (iteration 27): message=true (want BREAK THE GLASS) stage=0 (want 0) view made=false (want false)
+D3 whole glass held at the eye: stage=0 (want 0) seen=false (want false) removed=0 (want 0) view made=false (want false)
+D7 lowering it slowly to the table: broken=false (want false) carrying=true
+D8a smashed (iteration 27): stage=1 (want 1) carrying=true (want true) removed=0 (want 0)
+D8 smashed on the table: carrying=false (want false) removed=1 (want 1) turn list has it=true (want true) amount_player=2 (want 2) shards/fx added=true seen reset=true (want true) view gone=true (want true)
+D8b hand free again: holding=false (want false) enabled=2
+E1 took saw: true
+E2 sawing: near hint 'false/0'  stroke=0 sawedOff=true (want true) dmg=2 (want 2) HideSegment calls=1 (want 1) enabled soon
+E3 perms back: enabled=3 (want 2)
+F0a ws 13.2 (need 0.40 m = 5.28 u): 3 u out false (want false), 6 u out true (want true), 6 u out but 9 u aside false (want false), behind you false (want false)
+F0b ws 6.6 (a bigger you, need 2.64 u): 3 u out true (want true), 2 u out false (want false)
+F0c ws 26 (a tiny you: need is capped by 28 % of the way, 8.4 u): 7 u out false (want false), 9 u out true (want true)
+F0d need(ws, hl): 5.28 (want 5.28), 8.4 (want 8.4)
+F1 took cuffs: true
+F2 held out: zone=true presses=[] (want empty yet)  hint 'false/0'
+F3 dealer takes them: presses=["handcuffs"] (want [handcuffs]) handoff=true (want true) holding=true (want true)
+F4 animation start retargeted: key0=(-0.07, 0.51, 4.54) want (-0.07, 0.51, 4.54) key count=3 (want 3) visible key0=true (want true)  prop keys all there: true
+F4b the dealer's hand reaches there: key0.7=(2.31, -0.09, 4.24) want (2.31, -0.09, 4.24) key1.15 same=true rest key untouched=true retreat key untouched=true
+F5 cuffs follow the hand while the game takes them: true
+F6 game freed the item: carrying=false (want false) holding=false (want false) handoff=false
+G1 cuffed, bar not on the table yet: flag=true fists=true (want true) hands still free: true
+G2 hands in the bracelets: left wrist to rings 0 / 20.5 cm, right wrist 20.5 / 0 cm (want one 0 each, different rings) swap=false bar t=0
+G3 pulled 3 cm: cuffs turned t=0.5 (want 0.5) bar pos=(-2.54, -0.58, -3.8) want (-2.54, -0.58, -3.8)
+G4 pulled 30 cm: t=1 (want 1) hands stay at the bracelets: 5.7 / 5.8 cm from them (want <= 6)
+G4b hands resting, strained: new buzzes in 1.4 s = 0 (want 0)  strain left L/R = 0 / 0 cm (want ~0)  bar t stays 1 (want 1)
+G4c a hand pulled away fast: buzzes = 3 (want > 0)
+G4d ...and held there: new buzzes in 1.4 s = 0 (want 0 or 1)
+G4e a hand in its place, a little unsteady: new buzzes = 0 (want 0)
+G5 the game's own tug is playing: we leave the bar alone: true (want true)
+G6 no gun grab while cuffed: gun_state=0 (want 0)
+G7 free again: cuffed=false (want false) fists open=true (want true)
+H0 gun in hand: gun_state=1 (want 1)
+H1 nudge mode on: true (want true)
+H2 gun moved by 0.02 m (want 0.02), forward = true (want true); hand moved with it: 0.02 m (want 0.02)
+H3 nudge saved, mode off: true (want true)
+H4 loaded back: (0, 0, -0.02) (want (0, 0, -0.02))
+I1 gun in the right hand: state=1 (want 1) game told=false (want false) free=true (want true) InteractWith=[] (want empty)
+I2 left hand takes the beer with the gun in the other: carrying=true (want beer) hand=true gun still in hand=true
+I3 let go away from any zone: back on the table, carrying=false (want false) gun still in hand=true (want true)
+I4 left hand takes the pump of the gun in the right hand: rit_hand=true (want true) framed=true
+I5 pumped: pull=1.2 (want 1.2) the copy of the pump moved 1.2 units (want about 1.2)  barrel vs line between the hands: 3.1 deg (want small) support weight=1 rit='' (want empty)
+I6 let go: pump back: 0 units off (want 0) rit_hand=<null> (want null) support weight=0 (want 0)
+I7 trigger during an item ritual: state=1 (want 1) InteractWith=[] (want empty)
+I8 trigger: state=2 (want 2) game told: ["shotgun"] (want [shotgun]) now game=true
+I9 a moment later the shot follows: ["shotgun", "text dealer"] (want [shotgun, text dealer])
+I10 hand opened over the gun's place: state=0 (want 0) real gun shown=true (want true) InteractWith=[] (want empty) pump copy gone=true
+I10b stale fs_dec from the last shot does not end the pick-up: state=1 (want 1) fs_dec=true
+I11 drank with the gun in the other hand: rit=beer_rack (want beer_rack) gun in hand=true (want true)
+I12 pump grabbed: true (want true)
+I13 racked: rit=beer_wait (want beer_wait) seq=["blank", "live"] (want [blank, live]) fx=2
+I14 after: rit='' (want empty) gun still in hand=true (want true) enabled=4
+I15 took the saw: true
+I16 sawn off with the gun in the other hand: sawedOff=true (want true) dmg=2 (want 2) piece falling: true
+I17 magnifier looked through at the gun in your hand: seen=true (want true) shell=blank game's SetupShell not used: true (want true) removed=0 (want 0)
+I18 the shell model sits in the open breech of the copy: off by 0 cm (want 0)  real shell on the pump copy hidden=true
+I19 let go of the used glass: it breaks - carrying=false (want false) removed=1 (want 1) view gone=true (want true) gun in hand=true (want true) mag amount_player=1 (want 1)
+J1 took the cigarette: true hint/ring shown=false
+J2 held away from the mouth: heal calls=0 (want 0) drink timer=0 (want 0) smoking=false (want false)
+J3 at the mouth for 0.25 s: heal calls=0 (want 0 yet) timer=0.26 ring false
+J4 in the mouth: heal calls=1 (want 1) removed=1 (want 1) stat_cigSmoked=1 (want 1) numberOfCigs_player=1 (want 1) amount_player=2 (want 2) turn list=true (want true) smoking=true (want true) tossed=0 (want 0) hand free=true (want true)
+J5 the cigarette is at the lips: filter 4.3 cm from the mouth (want < 1.5)  glowing end is 11.7 cm out (want about 8)
+J6 after 4.8 s: still burning=true (want true) body 51 mm -> 24.6 mm (want shorter)
+J7 after 10.3 s: burned down, gone: true (want true)
+J8 permissions back after the health display: enabled=7 (want at least 3)
+L1 at the table: nothing / latch / shotgun / double yes / double no / (not aiming at it) = [false, false, false, true, true, false] (want [false, false, false, true, true, false])
+L2 pause menu: true (want true)  walking about: true (want true)  floating panel: true (want true)
+M1 a frame under an item: verts=36 height spread 0 (want 0 = lies flat on the table) at y=0.079 x 2.45 z 2.45 (want both > 2)
+M2 a frame on a slanted door: verts=36 all in the door's plane (largest off-plane 0, want 0) frame half width 2.33 (want about 2.2)
+M2b ...which is NOT the plane facing the head: the door normal vs the way to the head = 76.6 deg (want clearly > 0)
+M3 poke_boxes entries: 2 (want 2) flat=true face=true (want true true)
+N1 the case stops in reach: latches/lid centre (0, 3.8, -5.94) want x,z = (0, 0, -5.94)  (distance from the head: 0.45 m, want 0.45)  y kept: true (want true)  first key untouched: true
+N2 asking again changes nothing: true (want true)
+N3 once the case is out it is left alone: true (want true)
+N4 head moved while it was away: the stop follows: true (want true)
+O1 blood amount at 0 / .05 / .1 / .5 / 1.5 / 3 / end / after / before: [0, 0.49, 0.95, 0.82, 0.63, 0.04, 0, 0, 0] (want 0, mid, ~1, high, falling, near 0, 0, 0, 0)
+K1 busy: nothing / a hand holds / gun in hand / ritual / cuffed / glass seen = [false, true, true, true, true, true] (want [false, true, true, true, true, true])
+K2 both grips squeezed 1.4 s with the shotgun in one hand: gesture started=false (want false)
+K3 gesture switched off: started=false (want false)
+K4 settings steppers: size 0.5 -> smaller 0.45 (want 0.05 less) -> bigger 0.5 (want back); height +2 cm: 2 (want 2), -2 cm: 0 (want 0)
+K5 reset: size 0.5 scale 13.2 (want default 13.2)

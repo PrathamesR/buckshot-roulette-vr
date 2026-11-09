@@ -1,0 +1,15 @@
+Godot Engine v4.1.1.stable.official.bd6af8e0e - https://godotengine.org
+A 1 mouth from 50 cm, below: aim='self' locked=true (want 'self') hand dist=0.5 m
+A 2 mouth from 25 cm, 6 deg off: aim='self' locked=true (want 'self') hand dist=0.25 m
+A 3 mouth from 25 cm, 12 deg off: aim='self' locked=true (want 'self') hand dist=0.25 m
+A 4 hand at the chin 15 cm, barrel up into the mouth: aim='self' locked=true (want 'self') hand dist=0.15 m
+A 5 from the cheek (20 cm right), across: aim='self' locked=true (want 'self') hand dist=0.23 m
+A 6 muzzle ends at the lips, hand 40 cm low: aim='self' locked=true (want 'self') hand dist=0.42 m
+A 4b muzzle in the mouth, hand 12 cm from the head: aim='self' locked=true (want 'self') hand dist=0.12 m
+A 4c muzzle in the mouth, hand 22 cm low and forward: aim='self' locked=true (want 'self') hand dist=0.22 m
+A 4d barrel in the mouth from the right side, hand 30 cm out: aim='self' locked=true (want 'self') hand dist=0.31 m
+A 4e hand 6 cm from the head (grip slid up to the pump), muzzle in the mouth: aim='self' locked=true (want 'self') hand dist=0.07 m
+A 4f same, jittering 10 deg: aim='self' locked=true (want 'self') hand dist=0.12 m
+A 7 straight ahead (not you): aim='' locked=false (want '') hand dist=0.44 m
+A 8 past the head, 40 cm to the side at 60 cm: aim='' locked=false (want '') hand dist=0.51 m
+A 9 forward from the hip (not you): aim='' locked=false (want '') hand dist=0.66 m
